@@ -50,6 +50,8 @@ def go(args):
     )
     artifact.add_file("clean_sample.csv")
     run.log_artifact(artifact)
+    
+    artifact.wait()
 
 
 if __name__ == "__main__":
