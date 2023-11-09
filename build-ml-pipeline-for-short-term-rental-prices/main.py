@@ -1,5 +1,6 @@
 import json
-
+import sys
+print(sys.prefix)
 import mlflow
 import tempfile
 import os
