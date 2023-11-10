@@ -26,7 +26,7 @@ model_path = os.path.join(config['output_model_path'], 'weight.pkl')
 
 
 #################Function for model scoring
-def score_model():
+def score_model(model_path, test_data_path):
     # this function should take a trained model, load test data, and calculate an 
     # F1 score for the model relative to the test data
     # it should write the result to the latestscore.txt file
@@ -34,8 +34,7 @@ def score_model():
     model = pickle.load(open(model_path, 'rb'))
     
     logger.info("Load data from: %s", test_data_path)
-    
-    df = pd.read_csv(glob(f'{test_data_path}/*.csv')[0])  # assert only 1 file in test
+    df = pd.read_csv(test_data_path)  # assert only 1 file in test
     X_test = df.drop(['corporation', 'exited'], axis='columns')
     y_test = df['exited']
     
@@ -53,4 +52,4 @@ def score_model():
 
 
 if __name__ == "__main__":
-    score_model()
+    score_model(model_path, test_data_path=glob(f'{test_data_path}/*.csv')[0])

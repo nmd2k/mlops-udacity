@@ -25,10 +25,10 @@ test_data_path = os.path.join(config['test_data_path'])
 prod_deployment_path = os.path.join(config['prod_deployment_path'], 'weight.pkl')
 
 ##################Function to get model predictions
-def model_predictions():
+def model_predictions(deployed_model_path, test_data_path):
     #read the deployed model and a test dataset, calculate predictions
-    model = pickle.load(open(prod_deployment_path, 'rb'))
-    df_test = pd.read_csv(glob(f'{test_data_path}/*.csv')[0])
+    model = pickle.load(open(deployed_model_path, 'rb'))
+    df_test = pd.read_csv(test_data_path)
     
     X_test = df_test.drop(['corporation', 'exited'], axis='columns')
     preds = model.predict(X_test)
@@ -38,9 +38,9 @@ def model_predictions():
     return preds
 
 ##################Function to get summary statistics
-def dataframe_summary():
+def dataframe_summary(data_path):
     #calculate summary statistics here
-    df = pd.read_csv(glob(f'{dataset_csv_path}/*.csv')[0])
+    df = pd.read_csv(data_path)
     df_stats = df.describe().iloc[1:3]
     median_list = []
     
@@ -79,11 +79,11 @@ def outdated_packages_list():
     with open('requirements.txt', 'wb') as f:
        f.write(outdated)
        
-    logger.info("Out of date packages:", outdated)
+    logger.info(outdated)
     return outdated     
 
-def missing_data():
-    df = pd.read_csv(glob(f'{dataset_csv_path}/*.csv')[0])
+def missing_data(data_path):
+    df = pd.read_csv(data_path)
     
     na_list = list(df.isna().sum(axis=0))
     na_percents = [na_list[i]/len(df.index) for i in range(len(na_list))]
@@ -94,9 +94,9 @@ def missing_data():
 
 
 if __name__ == '__main__':
-    model_predictions()
-    dataframe_summary()
-    missing_data()
+    model_predictions(prod_deployment_path, glob(f'{test_data_path}/*.csv')[0])
+    dataframe_summary(glob(f'{dataset_csv_path}/*.csv')[0])
+    missing_data(glob(f'{dataset_csv_path}/*.csv')[0])
     execution_time()
     outdated_packages_list()
 

@@ -1,4 +1,6 @@
-__main__ - INFO - Loading data ...
-__main__ - INFO - Initualized model ...
-__main__ - INFO - Training model ...
-__main__ - INFO - Model saved practicemodels
+__main__ - INFO - New data available sourcedata
+scoring - INFO - Load model from: production_deployment/weight.pkl
+scoring - INFO - Load data from: ingesteddata/finaldata.csv
+scoring - INFO - Score saved!
+__main__ - INFO - Lastest F1 score: 0.5714285714285715, F1 score on newly ingested data: 0.6923076923076923
+__main__ - INFO - No model drift
