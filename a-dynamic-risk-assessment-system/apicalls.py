@@ -3,7 +3,7 @@ import json
 import requests
 
 #Specify a URL that resolves to your workspace
-URL = "http://localhost:8000/"
+URL = "http://127.0.0.0:8000/"
 
 with open('config.json','r') as f:
     config = json.load(f) 
@@ -27,7 +27,4 @@ responses = {
 #write the responses to your workspace
 with open(os.path.join(config["output_model_path"], "apireturns2.txt"), 'w') as f:
     json.dump(responses, f)
-
-
-
 
