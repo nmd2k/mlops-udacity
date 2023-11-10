@@ -1,0 +1,8 @@
+__main__ - INFO - [0 1 1 1 1]
+__main__ - INFO -         lastmonth_activity  lastyear_activity  number_of_employees    exited
+mean            165.653846        1502.923077            26.884615  0.576923
+std             284.033229        2192.644958            31.353886  0.503831
+median           73.000000         955.000000            14.000000  1.000000
+__main__ - INFO - [0.0, 0.0, 0.0, 0.0, 0.0]
+__main__ - INFO - Execution time of ingestion.py: 0.268845796585083
+__main__ - INFO - Execution time of training.py: 0.7498228549957275

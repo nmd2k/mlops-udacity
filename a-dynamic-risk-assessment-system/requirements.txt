@@ -1,23 +1,70 @@
-click==7.1.2
-cycler==0.10.0
-Flask==1.1.2
-gunicorn==20.0.4
-itsdangerous==1.1.0
-Jinja2==2.11.3
-joblib==1.0.1
-kiwisolver==1.3.1
-MarkupSafe==1.1.1
-matplotlib==3.3.4
-numpy==1.20.1
-pandas==1.2.2
-Pillow==8.1.0
-pyparsing==2.4.7
-python-dateutil==2.8.1
-pytz==2021.1
-scikit-learn==0.24.1
-scipy==1.6.1
-seaborn==0.11.1
-six==1.15.0
-sklearn==0.0
-threadpoolctl==2.1.0
-Werkzeug==1.0.1
+Package                Version Latest Type
+---------------------- ------- ------ -----
+alembic                1.4.1   1.12.1 wheel
+antlr4-python3-runtime 4.8     4.13.1 wheel
+anyio                  3.7.1   4.0.0  wheel
+appnope                0.1.2   0.1.3  wheel
+argon2-cffi            21.3.0  23.1.0 wheel
+arrow                  1.2.3   1.3.0  wheel
+autopep8               1.5.6   2.0.4  wheel
+bleach                 4.1.0   6.1.0  wheel
+Brotli                 1.0.9   1.1.0  wheel
+cffi                   1.15.1  1.16.0 wheel
+chardet                4.0.0   5.2.0  wheel
+charset-normalizer     2.0.4   3.3.2  wheel
+cookiecutter           1.7.2   2.4.0  wheel
+cryptography           41.0.3  41.0.5 wheel
+cycler                 0.11.0  0.12.1 wheel
+fastjsonschema         2.16.2  2.18.1 wheel
+hydra-core             1.0.6   1.3.2  wheel
+ipykernel              5.3.4   6.26.0 wheel
+ipython                7.21.0  8.17.2 wheel
+jedi                   0.17.2  0.19.1 wheel
+joblib                 1.0.1   1.3.2  wheel
+jupyter-client         7.4.9   8.6.0  wheel
+jupyter-packaging      0.7.12  0.12.3 wheel
+jupyter-server         1.24.0  2.10.0 wheel
+jupyterlab             3.0.10  4.0.8  wheel
+jupyterlab-pygments    0.1.2   0.2.2  wheel
+kiwisolver             1.4.4   1.4.5  wheel
+llvmlite               0.39.1  0.41.1 wheel
+matplotlib             3.3.4   3.8.1  wheel
+mistune                0.8.4   3.0.2  wheel
+mlflow                 1.14.1  2.8.0  wheel
+nbclassic              0.5.6   1.0.0  wheel
+nbclient               0.5.13  0.9.0  wheel
+nbconvert              6.4.4   7.11.0 wheel
+nest-asyncio           1.5.6   1.5.8  wheel
+notebook               6.2.0   7.0.6  wheel
+numba                  0.56.4  0.58.1 wheel
+numpy                  1.20.1  1.26.1 wheel
+omegaconf              2.0.6   2.3.0  wheel
+packaging              23.1    23.2   wheel
+pandas                 1.4.0   2.1.2  wheel
+parso                  0.7.0   0.8.3  wheel
+Pillow                 10.0.1  10.1.0 wheel
+pip                    20.3.3  23.3.1 wheel
+platformdirs           3.10.0  3.11.0 wheel
+prometheus-client      0.14.1  0.18.0 wheel
+prompt-toolkit         3.0.36  3.0.40 wheel
+protobuf               3.20.0  4.25.0 wheel
+pydantic-core          2.10.1  2.14.1 wheel
+Pygments               2.15.1  2.16.1 wheel
+pyOpenSSL              23.2.0  23.3.0 wheel
+pyparsing              3.0.9   3.1.1  wheel
+python-slugify         5.0.2   8.0.1  wheel
+pyzmq                  23.2.0  25.1.1 wheel
+rpds-py                0.10.6  0.12.0 wheel
+scikit-learn           0.24.1  1.3.2  wheel
+scipy                  1.10.1  1.11.3 wheel
+seaborn                0.11.2  0.13.0 wheel
+setuptools             68.0.0  68.2.2 wheel
+shap                   0.40.0  0.43.0 wheel
+terminado              0.17.1  0.18.0 wheel
+traitlets              5.7.1   5.13.0 wheel
+typing-extensions      4.7.1   4.8.0  wheel
+Unidecode              1.2.0   1.3.7  wheel
+urllib3                1.26.18 2.0.7  wheel
+wandb                  0.10.31 0.16.0 wheel
+wcwidth                0.2.5   0.2.9  wheel
+wheel                  0.41.2  0.41.3 wheel

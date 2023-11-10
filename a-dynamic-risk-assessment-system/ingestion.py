@@ -36,7 +36,7 @@ def merge_multiple_dataframe() -> None:
 
     with open(os.path.join(output_folder_path, 'ingestedfiles.txt'), 'w') as writer:
         for item in visited:
-            writer.write(item)
+            writer.write(item + "\n")
 
     logging.info('Datasets found, compiled, and duplicates dropped')  
 
