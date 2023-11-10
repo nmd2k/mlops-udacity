@@ -1,3 +1,3 @@
-__main__ - INFO - Load model from: practicemodels/weight.pkl
+__main__ - INFO - Load model from: practicemodels/trainedmodel.pkl
 __main__ - INFO - Load data from: testdata
 __main__ - INFO - Score saved!

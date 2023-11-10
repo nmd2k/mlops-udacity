@@ -18,7 +18,7 @@ with open('config.json','r') as f:
     config = json.load(f) 
 
 dataset_csv_path = os.path.join(config['output_folder_path']) 
-deployed_model_path = os.path.join(config['prod_deployment_path'], 'weight.pkl')
+deployed_model_path = os.path.join(config['prod_deployment_path'], 'trainedmodel.pkl')
 test_data_path = os.path.join(config['test_data_path'], 'testdata.csv')
 
 #######################Prediction Endpoint

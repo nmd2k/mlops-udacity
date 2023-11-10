@@ -17,7 +17,7 @@ dataset_csv_path = os.path.join(config['output_folder_path'])
 test_data_path = os.path.join(config['test_data_path'])
 output_model = os.path.join(config['output_model_path'])
 
-model = pickle.load(open(f'{output_model}/weight.pkl', 'rb'))
+model = pickle.load(open(f'{output_model}/trainedmodel.pkl', 'rb'))
 
 
 ##############Function for reporting

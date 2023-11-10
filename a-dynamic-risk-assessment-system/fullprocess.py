@@ -28,7 +28,7 @@ test_data_path = os.path.join(config['test_data_path'], 'testdata.csv')
 dataset_csv_path = os.path.join(output_folder_path, 'finaldata.csv')
 
 ingested_path = os.path.join(prod_deployment_path, 'ingestedfiles.txt')
-model_path = os.path.join(prod_deployment_path, 'weight.pkl')
+model_path = os.path.join(prod_deployment_path, 'trainedmodel.pkl')
 latest_score = os.path.join(prod_deployment_path, 'latestscore.txt')
 
 ##################Check and read new data

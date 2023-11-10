@@ -53,7 +53,7 @@ def train_model():
     model.fit(X_train, y_train)
     
     #write the trained model to your workspace in a file called trainedmodel.pkl
-    save_path = os.path.join(model_path, "weight.pkl")
+    save_path = os.path.join(model_path, "trainedmodel.pkl")
     
     os.makedirs(config['output_model_path'], exist_ok=True)
     pickle.dump(model, open(save_path, 'wb'))

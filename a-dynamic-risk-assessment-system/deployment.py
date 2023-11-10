@@ -17,7 +17,7 @@ output_model_path =  config['output_model_path']
 def store_model_into_pickle():
     #copy the latest pickle file, the latestscore.txt value, and the ingestfiles.txt file into the deployment directory
     os.makedirs(prod_deployment_path, exist_ok=True)
-    shutil.copy(os.path.join(output_model_path, 'weight.pkl'), prod_deployment_path)
+    shutil.copy(os.path.join(output_model_path, 'trainedmodel.pkl'), prod_deployment_path)
     shutil.copy(os.path.join(output_model_path, 'latestscore.txt'), prod_deployment_path)
     shutil.copy(os.path.join(output_data_path, 'ingestedfiles.txt'), prod_deployment_path)
         

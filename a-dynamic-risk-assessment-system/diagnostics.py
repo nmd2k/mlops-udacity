@@ -22,7 +22,7 @@ with open('config.json','r') as f:
 
 dataset_csv_path = os.path.join(config['output_folder_path']) 
 test_data_path = os.path.join(config['test_data_path']) 
-prod_deployment_path = os.path.join(config['prod_deployment_path'], 'weight.pkl')
+prod_deployment_path = os.path.join(config['prod_deployment_path'], 'trainedmodel.pkl')
 
 ##################Function to get model predictions
 def model_predictions(deployed_model_path, test_data_path):
