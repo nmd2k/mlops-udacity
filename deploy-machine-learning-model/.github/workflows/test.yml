@@ -1,0 +1,30 @@
+name: Unittest
+
+on: push
+
+jobs:
+  unittest:
+    name: Unittest
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        pyversion: [ "3.10" ]
+
+    steps:
+    - name: Check out Git repository
+      uses: actions/checkout@v2
+
+    - name: Set up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: ${{ matrix.pyversion }}
+
+    - name: Install dependencies
+      run: |
+        pip install -r requirements.txt
+
+    - name: Run tests
+      env:
+        HOST_URL: ${{ secrets.HOST_URL }}
+      run: |
+        HOST_URL=$HOST_URL python -m unittest
